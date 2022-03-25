@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { Login } from '../components/Login';
 
-test('Login component logs user in', async () => {
+test('Login component logs user in', () => {
   let loggedIn = false;
   const setLoggedIn = (changed) => (loggedIn = changed);
 
